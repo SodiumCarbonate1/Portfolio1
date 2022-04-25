@@ -1,0 +1,68 @@
+@import "../../global.scss";
+
+.Testimonials{
+    display: flex;
+    .introduction{
+        display: flex;
+        flex: 0.5;
+        border-radius: 30px;
+        overflow-y: hidden;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        padding:15px;
+        margin:auto;
+        color:white;
+        @include mobile{
+            flex: 1;
+            width:600px;
+            height:700px;
+        } 
+        .detail{
+            width:500px;
+            height: 600px;
+            overflow-y: hidden;
+            .about{
+                width:110px;
+                height:30px;
+                text-align: left;
+                font-weight: bolder;
+                margin-bottom:10px;
+                border-bottom: 2px solid white;
+                overflow: hidden;
+
+            }
+            a{
+                color:white;
+                padding:5px;
+                font-size: 30px;
+                position: relative;
+                left: 83%;
+            }
+        }
+    }
+    .introduction p{
+        line-height: 1.5;
+        text-align: left;   
+    }
+    .profilepic{
+
+        flex:0.5;
+        overflow:hidden;
+        margin: auto;
+        @include mobile{
+            display: none;
+            flex: 0;
+
+        }
+        .wayne{
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+    }
+
+
+}
+

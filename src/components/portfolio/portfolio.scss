@@ -1,0 +1,417 @@
+@import "../../global.scss";
+
+.Portfolio{
+    background-color:transparent;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    .title{
+      flex: 0.1;
+      justify-content: center;
+      font-size: 2.1rem;
+      overflow: hidden;
+      margin: auto;
+      @include mobile{
+        flex: 0;
+        display: none;
+      }
+    }
+    .introduction{
+      flex: 0.88;
+      display: flex;
+      flex-direction: column;
+      @include mobile{
+        flex: 1;
+
+      }
+      .frontend{
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        .introbox{  
+          flex: 0.5;
+          font-size: 1.3rem;
+          line-height: 1.5;
+          overflow: hidden;
+          margin-top:10px;
+          margin-left:10px;
+          @include mobile{
+            font-size:0.7rem;
+            line-height: 1.3;
+            width: 150px;
+          } 
+          section{
+            @include tablet{
+              width: 370px;
+            }
+            @include mobile{
+              width: 150px;
+            } 
+            display: block;
+            width:650px; 
+          }
+        }
+        .frontdetail{
+          flex: 0.5;
+          .test{
+            display: flex;
+            flex-direction: row;
+
+            justify-content: center;
+            align-items: center;
+            .skills{
+              flex: 0.2;
+              text-align: left;
+              margin-top:10px;
+              font-weight: bold;
+              font-size: 1.1rem;
+              @include mobile{
+                font-size: 0.6rem;
+              }
+            }
+            .progress {
+                margin-top:20px;
+                flex: 0.8;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                background: rgba(255,255,255,0.1);
+                justify-content: flex-start;
+                border-radius: 100px;
+                align-items: center;
+                position: relative;
+                padding: 0 5px;
+                display: flex;
+                height: 25px;
+                width: 500px;
+                .percent{
+                  font-size: 0.7rem;
+                }
+              }
+              .progress-value {
+                justify-content: center;
+                align-items: center;
+                animation: load 8s normal forwards;
+                box-shadow: 0 10px 40px -10px #fff;
+                border-radius: 100px;
+                background: lightblue;
+                height: 15px;
+                width: 0;
+                p{
+                  
+                }
+              }
+              
+              
+              @keyframes load {
+                0% { width: 0; }
+                100% { width: 88%; }
+              }
+              .progress-value1 {
+                justify-content: center;
+                align-items: center;
+                animation: load1 8s normal forwards;
+                box-shadow: 0 10px 40px -10px #fff;
+                border-radius: 100px;
+                background: lightblue;
+                height: 15px;
+                width: 0;
+              }
+              
+              
+              @keyframes load1 {
+                0% { width: 0; }
+                100% { width: 90%; }
+              }
+    
+              .progress-value2 {
+                justify-content: center;
+                align-items: center;
+                animation: load2 8s normal forwards;
+                box-shadow: 0 10px 40px -10px #fff;
+                border-radius: 100px;
+                background: lightblue;
+                height: 15px;
+                width: 0;
+              }
+              
+              
+              @keyframes load2 {
+                0% { width: 0; }
+                100% { width: 95%; }
+              }
+    
+    
+    
+    
+              .progress-value3 {
+                justify-content: center;
+                align-items: center;
+                animation: load3 8s normal forwards;
+                box-shadow: 0 10px 40px -10px #fff;
+                border-radius: 100px;
+                background: lightblue;
+                height: 15px;
+                width: 0;
+              }
+              
+              
+              @keyframes load3 {
+                0% { width: 0; }
+                100% { width: 85%; }
+              }
+              .progress-value4 {
+                justify-content: center;
+                align-items: center;
+                animation: load4 8s normal forwards;
+                box-shadow: 0 10px 40px -10px #fff;
+                border-radius: 100px;
+                background: lightblue;
+                height: 15px;
+                width: 0;
+              }
+              
+              
+              @keyframes load4 {
+                0% { width: 0; }
+                100% { width: 80%; }
+              }
+    
+    
+              .progress-value5 {
+                justify-content: center;
+                align-items: center;
+                animation: load5 8s normal forwards;
+                box-shadow: 0 10px 40px -10px #fff;
+                border-radius: 100px;
+                background: lightblue;
+                height: 15px;
+                width: 0;
+              }
+              
+              
+              @keyframes load5 {
+                0% { width: 0; }
+                100% { width: 60%; }
+              }
+
+              .progress-value6 {
+                justify-content: center;
+                align-items: center;
+                animation: load6 8s normal forwards;
+                box-shadow: 0 10px 40px -10px #fff;
+                border-radius: 100px;
+                background: lightblue;
+                height: 15px;
+                width: 0;
+              }
+              
+              
+              @keyframes load6 {
+                0% { width: 0; }
+                100% { width: 70%; }
+              }
+              .progress-value7 {
+                justify-content: center;
+                align-items: center;
+                animation: load7 8s normal forwards;
+                box-shadow: 0 10px 40px -10px #fff;
+                border-radius: 100px;
+                background: lightblue;
+                height: 15px;
+                width: 0;
+              }
+              
+              
+              @keyframes load7 {
+                0% { width: 0; }
+                100% { width: 81%; }
+              }
+            }
+        }
+      }
+      .backend{
+        width:100vw;
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        .introbox{  
+          flex: 0.5;
+          font-size: 1.3rem;
+          line-height: 1.5;
+          overflow: hidden;
+          margin-top:10px;
+          margin-left:10px;
+          @include mobile{
+            font-size:0.7rem;
+            line-height: 1.3;
+            width: 150px;
+          } 
+          section{
+            @include tablet{
+              width: 370px;
+            }
+            @include mobile{
+              width: 150px;
+            } 
+            display: block;
+            width:650px; 
+          }
+        }
+        .backenddetail{
+          flex: 0.5;
+
+          .test{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            .skills{
+              flex: 0.2;
+              width:50px;
+              text-align: left;
+              margin-top:10px;
+              font-weight: bold;
+              font-size: 1.1rem;
+              margin-right:10px;
+              @include mobile{
+                font-size: 0.6rem;
+              }
+            }
+            .progress {
+                margin-top:20px;
+                flex: 0.8;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                background: rgba(255,255,255,0.1);
+                justify-content: flex-start;
+                border-radius: 100px;
+                align-items: center;
+                position: relative;
+                padding: 0 5px;
+                display: flex;
+                height: 25px;
+                width: 500px;
+
+              }
+          .progress-value8 {
+            justify-content: center;
+            align-items: center;
+            animation: load8 8s normal forwards;
+            box-shadow: 0 10px 40px -10px #fff;
+            border-radius: 100px;
+            background: lightblue;
+            height: 15px;
+            width: 0;
+          }
+          
+          
+          @keyframes load8 {
+            0% { width: 0; }
+            100% { width: 75%; }
+          }
+          .progress-value9 {
+            justify-content: center;
+            align-items: center;
+            animation: load9 8s normal forwards;
+            box-shadow: 0 10px 40px -10px #fff;
+            border-radius: 100px;
+            background: lightblue;
+            height: 15px;
+            width: 0;
+          }
+          
+          
+          @keyframes load9 {
+            0% { width: 0; }
+            100% { width: 83%; }
+          }
+          .progress-value10 {
+            justify-content: center;
+            align-items: center;
+            animation: load10 8s normal forwards;
+            box-shadow: 0 10px 40px -10px #fff;
+            border-radius: 100px;
+            background: lightblue;
+            height: 15px;
+            width: 0;
+          }
+          
+          
+          @keyframes load10 {
+            0% { width: 0; }
+            100% { width: 55%; }
+          }
+          .progress-value11 {
+            justify-content: center;
+            align-items: center;
+            animation: load11 8s normal forwards;
+            box-shadow: 0 10px 40px -10px #fff;
+            border-radius: 100px;
+            background: lightblue;
+            height: 15px;
+            width: 0;
+          }
+          
+          
+          @keyframes load11 {
+            0% { width: 0; }
+            100% { width: 96%; }
+          }
+
+          .progress-value12 {
+            justify-content: center;
+            align-items: center;
+            animation: load12 8s normal forwards;
+            box-shadow: 0 10px 40px -10px #fff;
+            border-radius: 100px;
+            background: lightblue;
+            height: 15px;
+            width: 0;
+          }
+          
+          
+          @keyframes load12 {
+            0% { width: 0; }
+            100% { width: 61%; }
+          }
+          
+          .progress-value13 {
+            justify-content: center;
+            align-items: center;
+            animation: load13 8s normal forwards;
+            box-shadow: 0 10px 40px -10px #fff;
+            border-radius: 100px;
+            background: lightblue;
+            height: 15px;
+            width: 0;
+          }
+          
+          
+          @keyframes load13 {
+            0% { width: 0; }
+            100% { width: 96%; }
+          }
+          .progress-value14 {
+            justify-content: center;
+            align-items: center;
+            animation: load14 8s normal forwards;
+            box-shadow: 0 10px 40px -10px #fff;
+            border-radius: 100px;
+            background: lightblue;
+            height: 15px;
+            width: 0;
+          }
+          
+          
+          @keyframes load14 {
+            0% { width: 0; }
+            100% { width: 71%; }
+          }
+        }
+      }
+    }
+  }
+}
+
